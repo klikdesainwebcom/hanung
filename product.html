@@ -1,0 +1,124 @@
+<script type="text/javascript">
+//tambah
+function jmlTambah(){
+	var xPlus_A = Number(document.getElementById('hrg').innerHTML);
+	var xPlus_B = Number(document.getElementById('txtharga').value);
+	var xRes = Number(document.getElementById('result').innerHTML);
+	var mresult = (xRes + 1);
+	document.getElementById('result').innerHTML = mresult;	
+	var totHarga = (xPlus_A + xPlus_B);
+	document.getElementById('hrg').innerHTML = totHarga;
+	return false;
+}
+</script>
+<script type="text/javascript">
+//kurang
+function jmlKurang(){
+	toZero= 1;
+	toSisa = document.getElementById('txtharga').value;
+	var txtHarga = Number(document.getElementById('txtharga').value);
+	var hrg = Number(document.getElementById('hrg').innerHTML);
+	var xRes = Number(document.getElementById('result').innerHTML);
+	var result = (xRes - 1);
+	var sisaHrg = (hrg - txtHarga);
+	document.getElementById('result').innerHTML = result;
+	document.getElementById('hrg').innerHTML = sisaHrg;
+	if (result < 1 || sisaHrg < toSisa){
+		document.getElementById('hrg').innerHTML = txtHarga;
+		document.getElementById('result').innerHTML = toZero;
+		}
+	return true;
+}
+</script>
+<!-- PILIH WARNA -->
+<script type="text/javascript">
+function pickColor1(){
+	var color_1 = document.getElementById('color1').innerHTML;
+	document.getElementById('txtwarna').value = color_1;
+	document.getElementById('color1').style.border = '2px solid #0A82ED';
+	document.getElementById('color2').style.border = '0px solid #0A82ED';
+	document.getElementById('color3').style.border = '0px solid #0A82ED';
+	document.getElementById('color4').style.border = '0px solid #0A82ED';
+}
+</script>
+<script type="text/javascript">
+function pickColor2(){
+	var color_2 = document.getElementById('color2').innerHTML;
+	document.getElementById('txtwarna').value = color_2;
+	document.getElementById('color2').style.border = '2px solid #0A82ED';
+	document.getElementById('color1').style.border = '0px solid #0A82ED';
+	document.getElementById('color3').style.border = '0px solid #0A82ED';
+	document.getElementById('color4').style.border = '0px solid #0A82ED';
+}
+</script>
+<script type="text/javascript">
+function pickColor3(){
+	var color_3 = document.getElementById('color3').innerHTML;
+	document.getElementById('txtwarna').value = color_3;
+	document.getElementById('color3').style.border = '2px solid #0A82ED';
+	document.getElementById('color2').style.border = '0px solid #0A82ED';
+	document.getElementById('color1').style.border = '0px solid #0A82ED';
+	document.getElementById('color4').style.border = '0px solid #0A82ED';
+}
+</script>
+<script type="text/javascript">
+function pickColor4(){
+	var color_4 = document.getElementById('color4').innerHTML;
+	document.getElementById('txtwarna').value = color_4;
+	document.getElementById('color4').style.border = '2px solid #0A82ED';
+	document.getElementById('color2').style.border = '0px solid #0A82ED';
+	document.getElementById('color3').style.border = '0px solid #0A82ED';
+	document.getElementById('color1').style.border = '0px solid #0A82ED';
+}
+</script>
+<!-- PILIH UKURAN -->
+<script type="text/javascript">
+function pickUk1(){
+	var uk_1 = document.getElementById('uk1').innerHTML;
+	document.getElementById('txtukuran').value = uk_1;
+	document.getElementById('uk_1').style.border = '2px solid #0A82ED';
+	document.getElementById('uk_2').style.border = '0px solid #0A82ED';
+	document.getElementById('uk_3').style.border = '0px solid #0A82ED';
+	document.getElementById('uk_4').style.border = '0px solid #0A82ED';
+}
+</script>
+<script type="text/javascript">
+function pickUk2(){
+	var uk_2 = document.getElementById('uk2').innerHTML;
+	document.getElementById('txtukuran').value = uk_2;
+	document.getElementById('uk_2').style.border = '2px solid #0A82ED';
+	document.getElementById('uk_1').style.border = '0px solid #0A82ED';
+	document.getElementById('uk_3').style.border = '0px solid #0A82ED';
+	document.getElementById('uk_4').style.border = '0px solid #0A82ED';
+}
+</script>
+<script type="text/javascript">
+function pickUk3(){
+	var uk_3 = document.getElementById('uk3').innerHTML;
+	document.getElementById('txtukuran').value = uk_3;
+	document.getElementById('uk_3').style.border = '2px solid #0A82ED';
+	document.getElementById('uk_2').style.border = '0px solid #0A82ED';
+	document.getElementById('uk_1').style.border = '0px solid #0A82ED';
+	document.getElementById('uk_4').style.border = '0px solid #0A82ED';
+}
+</script>
+<script type="text/javascript">
+function pickUk4(){
+	var uk_4 = document.getElementById('uk4').innerHTML;
+	document.getElementById('txtukuran').value = uk_4;
+	document.getElementById('uk_4').style.border = '2px solid #0A82ED';
+	document.getElementById('uk_2').style.border = '0px solid #0A82ED';
+	document.getElementById('uk_3').style.border = '0px solid #0A82ED';
+	document.getElementById('uk_1').style.border = '0px solid #0A82ED';
+}
+</script>
+<!-- TOTAL HARGA -->
+<script type="text/javascript">
+//tambah
+function totalHarga(){
+	var xHarga = Number(document.getElementById('hrg').innerHTML);
+	var resHarga = (xHarga * 2);
+	document.getElementById('hrg').innerHTML = resHarga;
+	return false;
+}
+</script>
