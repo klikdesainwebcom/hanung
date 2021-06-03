@@ -1,3 +1,4 @@
+<meta name="amp-script-src" content="sha384-H0oCxV42Xxgpuc1RKzeETGZscYfGfHd52k7xTCo1EY387ORCGaYfqiFVA1TQauBn">
 <script>
 //tambah
 document.getElementById("plus").addEventListener("click", function() {
