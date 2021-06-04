@@ -90,5 +90,5 @@ document.getElementById("beli_beli").addEventListener("click", function() {
               document.getElementById('txtkec').value + ',' + '%0D%0A' + 'Desa/Kota%20:%20' + 
               document.getElementById('txtkota').value + ',' + '%0D%0A' + 'Kodepos%20:%20' + 
               document.getElementById('txtkodepos').value + ',' + '%0D%0A' + 'Nomor%20Hp%20:%20' + 
-              document.getElementById('txthp').value)}); 
+              document.getElementById('txthp').value,"_blank")}); 
 
