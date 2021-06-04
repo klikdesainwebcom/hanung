@@ -91,6 +91,6 @@ var newWindow = 'https://api.whatsapp.com/send?phone=6285157796142&text=' + 'Nam
               document.getElementById('txtkota').value + ',' + '%0D%0A' + 'Kodepos%20:%20' + 
               document.getElementById('txtkodepos').value + ',' + '%0D%0A' + 'Nomor%20Hp%20:%20' + 
               document.getElementById('txthp').value;
-window.open(newWindow);			  
+open(newWindow);			  
 }); 
 
