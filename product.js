@@ -77,7 +77,8 @@ document.getElementById("uk4").addEventListener("click", function() {
 //beli
 const belideh = document.getElementById('beli_beli');
 belideh.addEventListener('click', () => {
-var myWindow = window.open('https://api.whatsapp.com/send?phone=6285157796142&text=' + 'Nama%20Produk%20:%20' + 
+var urlString=window.location.href;
+var siteBaseURL = urlString.substring(0, urlString.indexOf("https://api.whatsapp.com/send?phone=6285157796142&text=' + 'Nama%20Produk%20:%20' + 
               document.getElementById('nama_produk').innerHTML + ',' + '%0D%0A' + 'Qty%20:%20' + 
               document.getElementById('result').innerHTML + ',' + '%0D%0A' + 'Warna%20:%20' + 
               document.getElementById('txtwarna').value + ',' + '%0D%0A' + 'Ukuran%20:%20' + 
@@ -89,23 +90,7 @@ var myWindow = window.open('https://api.whatsapp.com/send?phone=6285157796142&te
               document.getElementById('txtkec').value + ',' + '%0D%0A' + 'Desa/Kota%20:%20' + 
               document.getElementById('txtkota').value + ',' + '%0D%0A' + 'Kodepos%20:%20' + 
               document.getElementById('txtkodepos').value + ',' + '%0D%0A' + 'Nomor%20Hp%20:%20' + 
-              document.getElementById('txthp').value);
-myWindow.location = 'https://api.whatsapp.com/send?phone=6285157796142&text=' + 'Nama%20Produk%20:%20' + 
-              document.getElementById('nama_produk').innerHTML + ',' + '%0D%0A' + 'Qty%20:%20' + 
-              document.getElementById('result').innerHTML + ',' + '%0D%0A' + 'Warna%20:%20' + 
-              document.getElementById('txtwarna').value + ',' + '%0D%0A' + 'Ukuran%20:%20' + 
-              document.getElementById('txtukuran').value + ',' + '%0D%0A' + 'Total%20Bayar%20:%20' + 
-              document.getElementById('hrg').innerHTML + ',' + '%0D%0A' + 'Nama%20Lengkap%20:%20' + 
-              document.getElementById('txtnama').value + ',' + '%0D%0A' + 'Alamat%20:%20' + 
-              document.getElementById('txtalamat').value + ',' + '%0D%0A' + 'Kabupaten%20:%20' + 
-              document.getElementById('txtkab').value + ',' + '%0D%0A' + 'Kecamatan%20:%20' + 
-              document.getElementById('txtkec').value + ',' + '%0D%0A' + 'Desa/Kota%20:%20' + 
-              document.getElementById('txtkota').value + ',' + '%0D%0A' + 'Kodepos%20:%20' + 
-              document.getElementById('txtkodepos').value + ',' + '%0D%0A' + 'Nomor%20Hp%20:%20' + 
-              document.getElementById('txthp').value';
+              document.getElementById('txthp').value));
+window.open(siteBaseURL,"_self");
   });
-
-
-
-
 
