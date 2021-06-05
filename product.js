@@ -76,7 +76,8 @@ document.getElementById("uk4").addEventListener("click", function() {
 
 //beli
 var belideh = document.getElementById('beli_beli');
-belideh.addEventListener('click', function(){
+belideh.addEventListener('click', function(e){
+e.preventDefault();
 window.open('https://api.whatsapp.com/send?phone=6285157796142&text=' + 'Nama%20Produk%20:%20' + 
               document.getElementById('nama_produk').innerHTML + ',' + '%0D%0A' + 'Qty%20:%20' + 
               document.getElementById('result').innerHTML + ',' + '%0D%0A' + 'Warna%20:%20' + 
