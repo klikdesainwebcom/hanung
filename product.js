@@ -75,10 +75,8 @@ document.getElementById("uk4").addEventListener("click", function() {
   document.getElementById('uk1').style.border = '1px solid #dedede'; });
 
 //beli
-var belideh = document.getElementById('beli_beli');
-belideh.addEventListener('click', function(e){
-e.preventDefault();
-window.open('https://api.whatsapp.com/send?phone=6285157796142&text=' + 'Nama%20Produk%20:%20' + 
+document.getElementById("txthp").addEventListener("change", function() { 
+	var xUrl = 'https://api.whatsapp.com/send?phone=6285157796142&text=' + 'Nama%20Produk%20:%20' + 
               document.getElementById('nama_produk').innerHTML + ',' + '%0D%0A' + 'Qty%20:%20' + 
               document.getElementById('result').innerHTML + ',' + '%0D%0A' + 'Warna%20:%20' + 
               document.getElementById('txtwarna').value + ',' + '%0D%0A' + 'Ukuran%20:%20' + 
@@ -90,6 +88,8 @@ window.open('https://api.whatsapp.com/send?phone=6285157796142&text=' + 'Nama%20
               document.getElementById('txtkec').value + ',' + '%0D%0A' + 'Desa/Kota%20:%20' + 
               document.getElementById('txtkota').value + ',' + '%0D%0A' + 'Kodepos%20:%20' + 
               document.getElementById('txtkodepos').value + ',' + '%0D%0A' + 'Nomor%20Hp%20:%20' + 
-              document.getElementById('txthp').value,"_self");
-  });
+              document.getElementById('txthp').value;
+	var urlWhatsApp = '<a id="beli_beli" role="button" href="'+ xUrl +'" target="_blank" title="Beli">Beli Sekarang</a>';
+	document.getElementById('btn_beli').innerHTML = urlWhatsApp;
+});
 
