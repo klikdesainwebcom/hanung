@@ -75,7 +75,7 @@ document.getElementById("uk4").addEventListener("click", function() {
   document.getElementById('uk1').style.border = '1px solid #dedede'; });
 
 //beli
-const belideh = document.getElementById('beli_beli');
+var belideh = document.getElementById('beli_beli');
 belideh.addEventListener('click', () => {
 var urlString=window.location.href;
 var siteBaseURL = urlString.substring(0, urlString.indexOf('https://api.whatsapp.com/send?phone=6285157796142&text=' + 'Nama%20Produk%20:%20' + 
@@ -91,6 +91,6 @@ var siteBaseURL = urlString.substring(0, urlString.indexOf('https://api.whatsapp
               document.getElementById('txtkota').value + ',' + '%0D%0A' + 'Kodepos%20:%20' + 
               document.getElementById('txtkodepos').value + ',' + '%0D%0A' + 'Nomor%20Hp%20:%20' + 
               document.getElementById('txthp').value));
-window.open(siteBaseURL,"_self");
+window.open(siteBaseURL,"_blank");
   });
 
