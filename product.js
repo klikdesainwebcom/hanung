@@ -75,7 +75,7 @@ document.getElementById("uk4").addEventListener("click", function() {
   document.getElementById('uk1').style.border = '1px solid #dedede'; });
 
 //beli
-document.getElementById("txthp").addEventListener("change", function() { 
+document.getElementById("txthp").addEventListener("click", function() { 
 	var xUrl = 'https://api.whatsapp.com/send?phone=6285157796142&text=' + 'Nama%20Produk%20:%20' + 
               document.getElementById('nama_produk').innerHTML + ',' + '%0D%0A' + 'Qty%20:%20' + 
               document.getElementById('result').innerHTML + ',' + '%0D%0A' + 'Warna%20:%20' + 
