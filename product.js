@@ -74,10 +74,9 @@ document.getElementById("uk4").addEventListener("click", function() {
   document.getElementById('uk3').style.border = '1px solid #dedede'; 
   document.getElementById('uk1').style.border = '1px solid #dedede'; });
 
-
-
-  
-document.getElementById("beli_beli").addEventListener("click", function() { 
+//beli
+const belideh = document.getElementById('beli_beli');
+belideh.addEventListener('click', () => {
 window.open('https://api.whatsapp.com/send?phone=6285157796142&text=' + 'Nama%20Produk%20:%20' + 
               document.getElementById('nama_produk').innerHTML + ',' + '%0D%0A' + 'Qty%20:%20' + 
               document.getElementById('result').innerHTML + ',' + '%0D%0A' + 'Warna%20:%20' + 
@@ -91,5 +90,4 @@ window.open('https://api.whatsapp.com/send?phone=6285157796142&text=' + 'Nama%20
               document.getElementById('txtkota').value + ',' + '%0D%0A' + 'Kodepos%20:%20' + 
               document.getElementById('txtkodepos').value + ',' + '%0D%0A' + 'Nomor%20Hp%20:%20' + 
               document.getElementById('txthp').value);
-}); 
-
+  });
