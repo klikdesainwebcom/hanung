@@ -143,8 +143,8 @@ document.addEventListener('DOMContentLoaded', function() {
 var xVideo1 = document.getElementById("video1").getAttribute("src");
 var xVideo2 = document.getElementById("video1").getAttribute("alt");
 var xImg = document.getElementById("pic1").getAttribute("src");
-if (xVideo2){
-  var xPreview = '<video id="preview_video" class="detail_prod" width="512" height="512" src="'+ xVideo1 +'" poster="'+ xVideo2 +'" layout="responsive" controls autoplay></video>';
+if (xVideo1){
+  var xPreview = '<video id="preview_video" class="detail_prod" width="512" height="512" src="'+ xVideo2 +'" poster="'+ xVideo1 +'" layout="responsive" controls autoplay></video>';
   document.getElementById("preview").innerHTML = xPreview;
   document.getElementById("pic1").style.display = 'none';
   document.getElementById("pic1").style.visibility = 'hidden';
