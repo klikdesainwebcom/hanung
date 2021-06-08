@@ -144,12 +144,12 @@ var xVideo1 = document.getElementById("video1").getAttribute("src");
 var xVideo2 = document.getElementById("video1").getAttribute("alt");
 var xImg = document.getElementById("video1").getAttribute("src");
 if (xVideo2){
-document.getElementById("preview").innerHTML = '<amp-video id="preview_video" class="detail_prod" width="512" height="512" src="'+ xVideo2 +'" poster="'+ xVideo1 +'" layout="responsive" controls="" autoplay=""></amp-video>';
+document.getElementById("preview").innerHTML = '<amp-video id="preview_video" class="detail_prod" width="512" height="512" src="'+ xVideo2 +'" poster="'+ xVideo1 +'" layout="responsive" controls="" autoplay=""><source type="video/mp4" src="'+ xVideo2 +'"><source type="video/webm" src="'+ xVideo2 +'"></amp-video>';
 document.getElementById("pic1").style.display = 'none';
 document.getElementById("pic1").style.visibility = 'hidden';
 }
 else if (xImg){
-document.getElementById("preview").innerHTML = '<amp-img id="preview_img" layout="responsive" src="'+ xImg +'" class="detail_prod" width="512" height="512" alt="" title=""></amp-img>';
+document.getElementById("preview").innerHTML = '<amp-img id="preview_img" class="detail_prod" src="'+ xImg +'"  width="512" height="512" alt="" title="" layout="responsive"></amp-img>';
 document.getElementById("video1").style.display = 'none';
 document.getElementById("video1").style.visibility = 'hidden';
 }
