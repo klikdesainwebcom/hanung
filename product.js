@@ -156,7 +156,7 @@ document.getElementById("video1").style.visibility = 'hidden';
 });
 document.getElementById("video1").addEventListener("click", function() { 
 var x1Video = document.getElementById("video1").getAttribute("alt");
-document.getElementById("preview").innerHTML = '<amp-video id="preview_video" width="512" height="512" src="'+ x1Video +'" poster="'+ x1Video +'" layout="responsive" controls="true" autoplay="true"></amp-video>' ;
+document.getElementById("preview").innerHTML = '<amp-video id="preview_video" width="512" height="512" src="'+ x1Video +'" poster="'+ x1Video +'" layout="responsive" controls="true" autoplay="true"><source type="video/mp4" src="'+ x1Video +'"><source type="video/webm" src="'+ x1Video +'"></amp-video>' ;
 document.getElementById("preview_video").src = x1Video;
 });
 document.getElementById("pic1").addEventListener("click", function() { 
