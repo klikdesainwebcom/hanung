@@ -157,11 +157,7 @@ var x1Video = document.getElementById("video1").getAttribute("alt");
 document.getElementById("preview").innerHTML = '<amp-video id="preview_video" width="512" height="512" src="'+ x1Video +'" poster="'+ x1Video +'" layout="responsive" controls="true" autoplay="true"></amp-video>' ;
 document.getElementById("preview_video").src = x1Video;
 });
-document.getElementById("pic1").addEventListener("click", function() { 
-var xImg1 = document.getElementById("pic1").getAttribute("src");
-document.getElementById("preview").innerHTML = '<amp-img id="preview_img" src="'+ xImg1 +'" width="512" height="512" alt="" title="" layout="responsive"></amp-img>';
-document.getElementById("preview_img").src = xImg1;
-});
+
 document.getElementById("pic2").addEventListener("click", function() { 
 var xImg2 = document.getElementById("pic2").getAttribute("src");
 document.getElementById("preview").innerHTML = '<amp-img id="preview_img" src="'+ xImg2 +'" width="512" height="512" alt="" title="" layout="responsive"></amp-img>';
