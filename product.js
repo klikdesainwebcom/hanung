@@ -151,14 +151,6 @@ if (xVideo2){
   document.getElementById("video1").style.display = 'block';
   document.getElementById("video1").style.visibility = 'visible';  
 }
-else if (xImg){
-   var imgPrev = '<amp-img id="preview_img" class="detail_prod" src="'+ xImg +'"  width="512" height="512" alt="" title="" layout="responsive"></amp-img>';
-  document.getElementById("preview").innerHTML = imgPrev;
-  document.getElementById("video1").style.display = 'none';
-  document.getElementById("video1").style.visibility = 'hidden';
-  document.getElementById("pic1").style.display = 'block';
-  document.getElementById("pic1").style.visibility = 'visible';  
-}
 });
 document.getElementById("video1").addEventListener("click", function() { 
 var x1Video = document.getElementById("video1").getAttribute("alt");
