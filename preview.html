@@ -1,0 +1,23 @@
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+var xVideo1 = document.getElementById("video1").getAttribute("src");
+var xVideo2 = document.getElementById("video1").getAttribute("alt");
+var xImg = document.getElementById("pic1").getAttribute("src");
+if (xVideo2){
+var xPreview = '<amp-video id="preview_video" class="detail_prod" width="512" height="512" src="'+ xVideo2 +'" poster="'+ xVideo1 +'" layout="responsive" controls autoplay></amp-video>';
+document.getElementById("preview").innerHTML = xPreview;
+document.getElementById("pic1").style.display = 'none';
+document.getElementById("pic1").style.visibility = 'hidden';
+document.getElementById("video1").style.display = 'block';
+document.getElementById("video1").style.visibility = 'visible';
+}
+if (xImg){
+var imgPrev = '<amp-img id="preview_img" class="detail_prod" src="'+ xImg +'"  width="512" height="512" alt="" title="" layout="responsive"></amp-img>';
+document.getElementById("preview").innerHTML = imgPrev;
+document.getElementById("video1").style.display = 'none';
+document.getElementById("video1").style.visibility = 'hidden';
+document.getElementById("pic1").style.display = 'block';
+document.getElementById("pic1").style.visibility = 'visible';
+}
+});
+</script>
